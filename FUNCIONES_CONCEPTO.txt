@@ -1,0 +1,27 @@
+¿Que es una funcion?
+Una funcion realiza una tarea concreta y puede ser diseñada, implementada y depurada
+de manera independiente.
+
+
+Definicion de funciones
+La sintaxis básica para la definicion de una funcion en C++ es la siguiente:
+
+tipo nombre(tipo VAR 1, tipo VAR 2, ... tipo VAR n){
+    conjunto de intrucciones;
+}
+
+
+Estructura básica
+Como una cuestion de buena forma de programacion, el siguiente ordenamiento de instrucciones
+deberá formar la estructura básica alrededor de la cual se construyan todos sus programas en C++.
+
+directivas del preprocesador
+
+prototipo de funcion
+
+int main(){
+	conjunto de intrucciones;
+	return valor
+}
+
+definiciones de funcion
