@@ -4,7 +4,7 @@ using namespace std;
 void PedirDatos();
 void Mult(float x, float y);
 
-int num1, num2;
+float num1, num2;
 
 int main(){
 	
@@ -23,7 +23,7 @@ void PedirDatos(){
 }
 
 void Mult(float x, float y){
-	int multiplicacion = x * y;
+	float multiplicacion = x * y;
 	cout<<"\n.:RESULTADO:.\n";
 	cout<<"La multiplicacion de "<<x<<" * "<<y<<" es: "<<multiplicacion;
 }
