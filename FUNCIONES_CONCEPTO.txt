@@ -25,3 +25,9 @@ int main(){
 }
 
 definiciones de funcion
+
+PLANTILLAS DE funcion
+Las plantillas de funcion trabajan con variables de tipos, double, int,char, etc,
+para retornar un valor.
+estructura de una plantilla:
+template<class (NOMBRE DE VARIABLE)>
