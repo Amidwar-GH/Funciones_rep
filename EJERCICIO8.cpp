@@ -18,6 +18,13 @@ int main(){
 	
 	cambio(numero,cien,cincuenta,veinte,diez,cinco,uno);
 	
+	cout<<"Cien: "<<cien<<endl;
+	cout<<"Cincuenta: "<<cincuenta<<endl;
+	cout<<"Veinte: "<<veinte<<endl;
+	cout<<"Diez: "<<diez<<endl;
+	cout<<"Cinco: "<<cinco<<endl;
+	cout<<"Uno: "<<uno<<endl;
+	
 	
 	return 0;
 }
