@@ -16,6 +16,35 @@ int main(){
 	
 	cout<<"Digite la cantidad de dinero: "; cin>>numero;
 	
+	cambio(numero,cien,cincuenta,veinte,diez,cinco,uno);
+	
 	
 	return 0;
+}
+
+void cambio(int numero, int&cien, int&cincuenta, int&veinte, int&diez, int&cinco, int&uno){
+	int resto;
+	cien = numero / 100;
+	resto=numero%100;
+	numero=resto;
+	
+	cincuenta = numero / 50;
+	resto = numero % 50;
+	numero = resto;
+	
+	veinte = numero / 20;
+	resto = numero % 20;
+	numero = resto;
+	
+	diez = numero / 10;
+	resto = numero % 10;
+	numero = resto;
+	
+	cinco = numero / 5;
+	resto = numero % 5;
+	numero = resto;
+	
+	uno = numero / 1;
+	resto = numero % 1;
+	numero = resto;
 }
