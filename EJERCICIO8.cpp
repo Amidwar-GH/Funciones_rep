@@ -18,6 +18,9 @@ int main(){
 	
 	cambio(numero,cien,cincuenta,veinte,diez,cinco,uno);
 	
+	cout<<"\n.:Cambio a billetes:.\n";
+	cout<<"Dinero: "<<numero<<endl;
+	cout<<endl;
 	cout<<"Cien: "<<cien<<endl;
 	cout<<"Cincuenta: "<<cincuenta<<endl;
 	cout<<"Veinte: "<<veinte<<endl;
