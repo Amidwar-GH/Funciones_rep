@@ -14,7 +14,8 @@ int main(){
 }
 
 void calc_años(int, int&anio, in&mes, int&dia){
-	
-	
-	
+	anio = num / 365;
+	num %= 365;
+	mes = num / 30
+	dia = num % 30;
 }
