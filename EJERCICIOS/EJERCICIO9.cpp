@@ -11,18 +11,19 @@ int main(){
 	int totalSeg,horas,min,seg;
 	
 	cout<<"Digite el numero total de segundos: "; cin>>totalSeg;
+	tiempo(totalSeg,horas,min,seg);
 	
+	cout<<"\n.:Tiempo equivalente a la cantidad de segundos digitados:.\n";
+	cout<<"Horas: "<<horas<<endl;
+	cout<<"Minutos: "<<min<<endl;
+	cout<<"Segundos: "<<seg<<endl;
 	
 	return 0;
 }
 
 void tiempo(int totalSeg, int&horas, int&min, int&seg){
 	horas = totalSeg / 3600;
-	totalSeg = totalSeg % 3600;
-	
-	min=totalSeg/60;
-	totalSeg = totalSeg % 60;
-	
-	seg = totalSeg / 60;
-	totalSeg= totalSeg % 60;
+	totalSeg %= 3600;
+	min = totalSeg / 60;
+	seg = totalSeg % 60;
 }
