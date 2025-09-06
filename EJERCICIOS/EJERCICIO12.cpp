@@ -11,8 +11,8 @@ void orden(int arr[], int);
 bool bandera = false;
 int main(){
 	const int TAM=5;
-	//int vector[TAM]={2,1,4,3,5};
-	int vector[TAM]={1,2,3,4,5};
+	int vector[TAM]={2,1,4,3,5}; // <- Vector de numeros desordenado
+	//int vector[TAM]={1,2,3,4,5}; <- Vector de numeros ordenado
 	
 	orden(vector,TAM); 
 	if(bandera == true){
@@ -26,15 +26,10 @@ int main(){
 }
 
 void orden(int arr[], int tam){
-	for(int i=0; i<tam; i++){
-		for(int j=0; j<i; j++){
-			if(arr[i] <= arr[i+1]){
-				bandera = false;
-			}
-			else{
-				bandera = true;
-				break;
-			}
+	for(int i=0; i<tam-1; i++){
+		if(arr[i] > arr[i+1]){
+			bandera = true;
+			break;
 		}
 	}
 }
