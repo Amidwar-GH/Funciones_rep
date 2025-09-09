@@ -5,19 +5,30 @@ y su tamaño y cambie el signo de los elementos del vector.*/
 using namespace std;
 
 //Prototipos de funciones
-void pedirDatos(int arr[], int tam);
+void pedirDatos();
+void cambiarSigno(int arr[], int tam);
 
-int arr[100], tamaño;
+int arr[100], tam; //No declarar variables de caracteres especiales, aqui declaré como tamaño
 
 int main(){
-	pedirDatos(arr,tamaño);
-	
+	pedirDatos();
+	cambiarSigno(arr,tam);
 	
 	return 0;
 }
 
-void pedirDatos(int arr[], int tam){
-	for(int i=0; i<tamaño; i++){
+void pedirDatos(){
+	cout<<"Digite el tamaño del arreglo: ";cin>>tam;
+	
+	for(int i=0; i<tam; i++){
 		cout<<"Digite un numero: "; cin>>arr[i];
+	}
+}
+
+void cambiarSigno(int arr[], int tam){
+	for(int i=0; i<tam; i++){
+		if(arr[i]<0){
+			arr[i] = arr[i]*-1;
+		}
 	}
 }
