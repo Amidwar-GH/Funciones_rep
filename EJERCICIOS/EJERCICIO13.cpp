@@ -23,7 +23,7 @@ void pedirDatos(){
 	cout<<"Digite el tamaño del arreglo: ";cin>>tam;
 	
 	for(int i=0; i<tam; i++){
-		cout<<"Digite un numero: "; cin>>arr[i];
+		cout<<i+1<<". Digite un numero: "; cin>>arr[i];
 	}
 }
 
