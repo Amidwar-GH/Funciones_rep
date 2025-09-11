@@ -3,6 +3,7 @@
 #include<iostream>
 using namespace std;
 
+//Prototipo de funcion
 void calc_anios(int, int&, int&, int&);
 
 int main(){
@@ -16,6 +17,7 @@ int main(){
 	return 0;
 }
 
+//Desarrollando la funcion void
 void calc_anios(int num, int&anio, int&mes, int&dia){
 	anio = anio + (num / 365);
 	num %= 365;
