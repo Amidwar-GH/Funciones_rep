@@ -26,5 +26,6 @@ void funpot(int numero, int exp){
 		resultado *= numero;
 	}
 	
-	cout<<"El resultado es: "<<resultado;
+	cout<<"\n.:El resultado es:.\n ";
+	cout<<resultado;
 }
