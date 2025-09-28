@@ -6,7 +6,7 @@ devuelva el menor de los elementos almacenados en dicha fila*/
 using namespace std;
 
 void pedirDatos();
-
+void menor(int arr[][100], int nfilas, int ncol, int xfila);
 
 int arr[100][100], nfilas, ncol, xfila;
 
@@ -26,6 +26,17 @@ void pedirDatos(){
 		for(int j=0; j<ncol; j++){
 			cout<<"Digite un numero ["<<i<<"]["<<j<<"]: "; 
 			cin>>arr[i][j];
+		}
+	}
+}
+
+void menor(int arr[][100], int nfilas, int ncol, int xfila){
+	int menor = arr[0][0];
+	if((xfila<nfilas) || (xfila>filas)){
+		cout<<"Numero de fila invalido.";
+	}else{
+		for(int i=0; i<n; i++){
+			for(int i=0; i<)
 		}
 	}
 }
