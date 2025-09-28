@@ -11,8 +11,10 @@ void menor(int arr[][100], int nfilas, int ncol, int xfila);
 int arr[100][100], nfilas, ncol, xfila;
 
 int main(){
-	
+	//int numMenor;
 	pedirDatos();
+	menor(arr,nfilas,ncol,xfila);
+	
 	
 	return 0;
 }
@@ -32,11 +34,14 @@ void pedirDatos(){
 
 void menor(int arr[][100], int nfilas, int ncol, int xfila){
 	int menor = arr[0][0];
-	if((xfila<nfilas) || (xfila>filas)){
+	if((xfila<nfilas) || (xfila>nfilas)){
 		cout<<"Numero de fila invalido.";
 	}else{
-		for(int i=0; i<n; i++){
-			for(int i=0; i<)
+		for(int j=0; j<ncol; j++){
+			if(arr[xfila][j]>menor){
+				menor=arr[xfila][j];
+			}
 		}
+		cout<<"El numero menor de la fila es: "<<menor;
 	}
 }
